@@ -1,5 +1,6 @@
 ---
 import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
 import "../styles/global.css";
 import { ClientRouter } from "astro:transitions";
 ---
@@ -31,7 +32,8 @@ import { ClientRouter } from "astro:transitions";
 	<ClientRouter />
   </head>
   <body>
-    <main class="container mx-auto max-w-screen-sm py-20 space-y-14">
+    <main class="container mx-auto px-4 sm:px-0 sm:max-w-screen-sm py-20 space-y-14">
+		<Header />
 		<slot />
 	</main>
 	<Footer />	

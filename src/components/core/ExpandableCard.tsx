@@ -34,15 +34,15 @@ export const ExpandableCard = ({ image, title, description }: ExpandableCardProp
 
       {expanded && (
         <div
-          className={`min-h-screen max-w-screen bg-black/85 backdrop-blur-sm flex justify-center items-center fixed top-0 left-0 right-0 z-50 transition-opacity duration-300 ease-in-out ${
+          className={`min-h-screen max-w-screen bg-black/85 backdrop-blur-sm flex flex-col md:flex-row justify-center items-center fixed top-0 left-0 right-0 z-50 transition-opacity duration-300 ease-in-out ${
             modalOpacity === 1 ? "opacity-100" : "opacity-0"
           }`}
           onClick={handleExpand}
         >
-          <div className="flex flex-col justify-center items-center">
-            <img src={image} alt={title} className="max-w-lg rounded-2xl" />
+          <div className="flex flex-col justify-center items-center px-5 md:px-0">
+            <img src={image} alt={title} className="w-full h-auto max-w-lg rounded-2xl" />
           </div>
-          <div className="relative -left-8 -top-8 -rotate-6 hover:scale-105 transition-all duration-300 min-h-40 bg-white/90 rounded-2xl px-5 py-4">
+          <div className="md:relative md:-left-8 md:-top-8 -rotate-6 hover:scale-105 transition-all duration-300 min-h-40 bg-white/90 rounded-2xl px-5 py-4">
             <h3 className="font-medium text-lg text-black">{title}</h3>
             <p className="text-zinc-600 text-lg">{description}</p>
           </div>
