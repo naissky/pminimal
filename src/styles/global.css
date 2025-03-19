@@ -4,11 +4,38 @@
 @font-face {
     font-family: 'Apfelfont';
     src: url('/fonts/ApfelGrotezk-Regular.woff2') format('woff2');
-    weight: 300;
-    style: normal;
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apfelfont Medium';
+    src: url('/fonts/ApfelGrotezk-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apfelfont Bold';
+    src: url('/fonts/ApfelGrotezk-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Apfelfont Black';
+    src: url('/fonts/ApfelGrotezk-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
 }
 
 * {
     font-family: 'Apfelfont', sans-serif;
+    font-weight: 300;
     scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Apfelfont Medium', sans-serif;
+    font-weight: 500;
 }
