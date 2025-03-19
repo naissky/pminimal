@@ -1,22 +1,38 @@
-<!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
-</html>
+---
+import Footer from "../components/Footer.astro";
+import "../styles/global.css";
+import { ClientRouter } from "astro:transitions";
+---
 
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Naissky Portafolio Web</title>
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="description" content="Una breve descripción de la página." />
+    <meta
+      name="keywords"
+      content="palabra clave 1, palabra clave 2, palabra clave 3"
+    />
+    <meta name="author" content="Tu Nombre" />
+
+    <meta property="og:title" content="Tu Título Aquí" />
+    <meta
+      property="og:description"
+      content="Una breve descripción de la página."
+    />
+    <meta property="og:image" content="URL_de_tu_imagen" />
+    <meta property="og:url" content="URL_de_tu_página" />
+	<ClientRouter />
+  </head>
+  <body>
+    <main class="container mx-auto max-w-screen-sm py-20 space-y-14">
+		<slot />
+	</main>
+	<Footer />	
+  </body>

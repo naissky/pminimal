@@ -1,0 +1,15 @@
+---
+import { experienceData } from '../data';
+---
+
+<section class="mt-10">
+    <h2 class="font-medium text-lg text-black">Experiencia Laboral</h2>
+    <div class="flex flex-col gap-2 py-5">
+        {experienceData.map((experience) => (
+            <a href="/" class="border border-zinc-200/50 hover:border-zinc-300 transition-all duration-300 rounded-2xl px-4 py-2">
+                <h3 class="font-medium text-lg text-black ">{experience.title}</h3>
+                <p class="text-gray-400 text-lg">{experience.description}</p>
+            </a>
+        ))}
+    </div>
+</section>

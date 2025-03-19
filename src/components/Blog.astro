@@ -1,0 +1,19 @@
+---
+import { getCollection } from 'astro:content';
+
+const allBlogPost = await getCollection('blog');
+---
+
+<section class="mt-10">
+  <h2 class="font-medium text-lg text-black">Blog</h2>
+  <div class="flex flex-col gap-4 py-5">
+    {
+      allBlogPost.slice(0, 2).map((blogPost) => (
+          <a href={`/blog/${blogPost.slug}`} class="border border-zinc-200/50 hover:border-zinc-300 transition-all duration-300 rounded-2xl px-4 py-2">
+            <h3 class="font-medium text-lg text-black">{blogPost.data.title}</h3>
+            <p class="text-gray-400 text-lg">{blogPost.data.description}</p>
+          </a>
+      ))
+    }
+  </div>
+</section>

@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@font-face {
+    font-family: 'Apfelfont';
+    src: url('/fonts/ApfelGrotezk-Regular.woff2') format('woff2');
+    weight: 300;
+    style: normal;
+}
+
+* {
+    font-family: 'Apfelfont', sans-serif;
+    scroll-behavior: smooth;
+}

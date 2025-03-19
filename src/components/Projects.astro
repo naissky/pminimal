@@ -1,0 +1,22 @@
+---
+import { projectData } from "../data";
+import { ExpandableCard } from "./core/ExpandableCard.tsx";
+---
+
+<section class="mt-10">
+  <h2 class="font-medium text-lg text-black">Proyectos Seleccionados</h2>
+  <div class="grid grid-cols-4 gap-4 py-5">
+    {
+      projectData.slice(0, 2).map((project) => (
+        <div class="col-span-2 space-y-2">
+          <ExpandableCard
+            client:load
+            image={project.image}
+            title={project.title}
+            description={project.description}
+          />
+        </div>
+      ))
+    }
+  </div>
+</section>

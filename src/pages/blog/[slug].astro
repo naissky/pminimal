@@ -1,0 +1,28 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../../layouts/Layout.astro";
+// 1. Genera una nueva ruta para cada entrada de colección
+export async function getStaticPaths() {
+  const blogEntries = await getCollection("blog");
+  return blogEntries.map((entry) => ({
+    params: { slug: entry.slug },
+    props: { entry },
+  }));
+}
+// 2. Para tu plantilla, puedes obtener la entrada directamente de la prop
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+---
+
+<Layout>
+  <section class="mt-10">
+    <h1 class="font-medium text-xl text-black">{entry.data.title}</h1>
+    <div class="flex flex-col gap-4 py-5">
+      <div
+        class="prose prose-h1:font-bold prose-h1:text-xl prose-a:text-blue-600 prose-p:text-justify prose-img:rounded-xl prose-headings:underline"
+      >
+        <Content />
+      </div>
+    </div>
+  </section>
+</Layout>
