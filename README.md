@@ -2,6 +2,8 @@
 
 `pminimal` es un proyecto web construido con Astro, diseñado para ser un portafolio personal. Este proyecto utiliza Tailwind CSS para el estilo y ofrece una experiencia fluida y moderna.
 
+![preview](https://github.com/naissky/pminimal/blob/master/src/assets/preview.png)
+
 ## Instalación
 
 Para instalar las dependencias del proyecto, se recomienda usar `pnpm` en lugar de `npm` por su eficiencia en la gestión de paquetes. Si no tienes `pnpm` instalado, puedes hacerlo ejecutando:
