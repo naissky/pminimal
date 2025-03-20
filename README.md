@@ -1,6 +1,6 @@
 # pminimal
 
-`pminimal` es un proyecto web construido con Astro, diseñado para ser un portafolio personal. Este proyecto utiliza Tailwind CSS para el estilo y ofrece una experiencia fluida y moderna.
+`pminimal` es un proyecto web construido con Astro, diseñado para ser un portafolio personal. Este proyecto utiliza Tailwind CSS para el estilo y ofrece una experiencia minimalista y fluida.
 
 ![preview](https://github.com/naissky/pminimal/blob/master/src/assets/preview.png)
 
@@ -13,23 +13,13 @@ pnpm install
 pnpm dev
 ```
 
-/
-├── public/                  # Archivos estáticos
-│   └── favicon.svg          # Icono del sitio
-├── src/                     # Código fuente del proyecto
-│   ├── assets/              # Recursos estáticos como imágenes y SVGs
-│   ├── components/          # Componentes reutilizables de Astro
-│   ├── content/             # Contenido dinámico como entradas de blog
-│   ├── layouts/             # Layouts para las páginas
-│   │   └── Layout.astro     # Layout principal del proyecto
-│   └── pages/               # Páginas del sitio
-│       ├── blog/            # Sección de blog
-│       └── index.astro      # Página principal
-└── package.json             # Configuración del proyecto y dependencias
-
 ## Personaliza según sea necesario
 
 Asegúrate de ajustar cualquier sección para que se adapte mejor a tu proyecto y sus características específicas. Si necesitas más detalles o cambios, házmelo saber.
+
+## Personaliza el archivo data.ts
+
+El archivo `data.ts` contiene la información del portafolio, como proyectos, experiencia, etc. Puedes editar este archivo para personalizar el contenido de tu portafolio.
 
 ## Contribución
 
