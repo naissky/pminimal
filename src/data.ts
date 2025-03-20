@@ -24,7 +24,7 @@ export const headerData: HeaderData = {
 
 export const projectData: ProjectData[] = [
     {
-        title: "Proyecto 1",
+        title: "Crave Bakery Landing Page",
         description: "Descripción del proyecto 1",
         image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
     },

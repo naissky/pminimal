@@ -12,7 +12,7 @@
     font-family: 'Apfelfont Medium';
     src: url('/fonts/ApfelGrotezk-Medium.woff2') format('woff2');
     font-weight: 500;
-    font-style: normal;
+    font-style: medium;
 }
 
 @font-face {
@@ -38,4 +38,10 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Apfelfont Medium', sans-serif;
     font-weight: 500;
+}
+
+@theme {
+    --font-apfelfont-medium: 'Apfelfont Medium';
+    --font-apfelfont-bold: 'Apfelfont Bold';
+    --font-apfelfont-black: 'Apfelfont Black';
 }
