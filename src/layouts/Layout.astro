@@ -12,25 +12,30 @@ import { ClientRouter } from "astro:transitions";
     <meta name="viewport" content="width=device-width" />
     <title>Naissky Portafolio Web</title>
 
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="twitter:creator" content="@Naissky" />
+    <meta name="twitter:title" content="Portafolio Minimalista" />
+    <meta name="twitter:description" content="Portafolio Minimalista, diseñado para presentar tus proyectos de manera elegante y profesional." />
+    <meta name="twitter:image" content="https://pminimal.vercel.app/og.png" />
+
+    <!-- Open Graph (para Facebook y otras redes) -->
+    <meta property="og:title" content="Portafolio Minimalista" />
+    <meta property="og:description" content="Portafolio Minimalista, diseñado para presentar tus proyectos de manera elegante y profesional." />
+    <meta property="og:image" content="https://pminimal.vercel.app/og.png" />
+    <meta property="og:url" content="https://pminimal.vercel.app/" />
+
+    <!-- SEO -->
     <meta name="description" content="Portafolio Minimalista, diseñado para presentar tus proyectos de manera elegante y profesional." />
-    <meta
-      name="keywords"
-      content="portafolio, astro, tailwind, react, motion, javascript, html, css, web, diseño, desarrollo, frontend, backend, fullstack, web3, crypto, blockchain, bitcoin, ethereum, solana, terra, near, polkadot, kusama, substrate, parachain, defi, dapp, dapp"
-    />
+    <meta name="keywords" content="portafolio, astro, tailwind, react, motion, javascript, html, css, web, diseño, desarrollo, frontend, backend, fullstack, web3, crypto, blockchain, bitcoin, ethereum, solana, terra, near, polkadot, kusama, substrate, parachain, defi, dapp" />
     <meta name="author" content="Naissky" />
 
-    <meta property="og:title" content="Portafolio Minimalista" />
-    <meta
-      property="og:description"
-      content="Portafolio Minimalista, diseñado para presentar tus proyectos de manera elegante y profesional."
-    />
-    <meta property="og:image" content="https://pminimal.vercel.app/" />
-    <meta property="og:url" content="https://pminimal.vercel.app/" />
-	<ClientRouter />
-  </head>
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <ClientRouter />
+</head>
+
   <body>
     <main class="container mx-auto px-4 sm:px-0 sm:max-w-screen-sm py-20 space-y-14">
 		<Header />
