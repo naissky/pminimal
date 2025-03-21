@@ -24,14 +24,14 @@ export const headerData: HeaderData = {
 
 export const projectData: ProjectData[] = [
     {
-        title: "Crave Bakery Landing Page",
-        description: "Descripción del proyecto 1",
-        image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
+        title: "Crave Bakery",
+        description: "Crave Bakery es una panaderia enfocada al toque orgánico y familiar.",
+        image: "/crave-bakery.jpg"
     },
     {
-        title: "Proyecto 2",
-        description: "Descripción del proyecto 2",
-        image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
+        title: "Nido Creativo",
+        description: "El nido es una agencia de diseño ubicada en Buenos Aires, Argentina.",
+        image: "https://marcalima.pe/wp-content/uploads/2023/10/agencia_creativa.png"
     },
     {
         title: "Proyecto 3",
@@ -42,18 +42,18 @@ export const projectData: ProjectData[] = [
 
 export const experienceData: ExperienceData[] = [
     {
-        title: "Experiencia 1",
-        description: "Descripción de la experiencia 1",
+        title: "Diseñador Grafico",
+        description: "El corral.",
         image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
     },
     {
-        title: "Experiencia 2",
-        description: "Descripción de la experiencia 2",
+        title: "SEO & Marketing",
+        description: "Nido Creativo.",
         image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
     },
     {
-        title: "Experiencia 3",
-        description: "Descripción de la experiencia 3",
+        title: "Freelance",
+        description: "Desarrollo Web",
         image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
     }
 ]

@@ -31,7 +31,7 @@ export const ExpandableCard = ({
           src={image}
           alt={title}
           onClick={handleExpand}
-          className="cursor-zoom-in w-full h-auto rounded-2xl border border-zinc-200"
+          className="hover:scale-105 transition-all duration-300 cursor-zoom-in w-full object-center object-cover min-h-52 h-auto rounded-2xl border border-zinc-200"
         />
         <h3 className="font-medium text-lg text-black">{title}</h3>
         <p className="text-zinc-600 text-lg">{description}</p>
@@ -40,7 +40,7 @@ export const ExpandableCard = ({
       {expanded && (
         <div
           className={`min-h-screen max-w-screen bg-black/85 backdrop-blur-sm 
-            flex flex-col md:flex-row justify-center items-center fixed top-0 
+            flex flex-col justify-center items-center fixed top-0 
             left-0 right-0 z-50 transition-opacity duration-300 ease-in-out ${
             modalOpacity === 1 ? "opacity-100" : "opacity-0"
           }`}
@@ -60,8 +60,8 @@ export const ExpandableCard = ({
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            className="md:relative md:-left-8 md:-top-8 -rotate-6 hover:scale-105 
-            transition-all duration-300 min-h-40 bg-white/90 rounded-2xl px-5 py-4"
+            className="md:relative md:top-4 hover:scale-105 
+            transition-all duration-300 max-w-lg min-h-40 bg-white/90 rounded-2xl px-5 py-4"
           >
             <h3 className="font-medium text-lg text-black">{title}</h3>
             <p className="text-zinc-600 text-lg">{description}</p>
