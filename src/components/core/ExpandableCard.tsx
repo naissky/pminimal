@@ -40,7 +40,7 @@ export const ExpandableCard = ({
       {expanded && (
         <div
           className={`min-h-screen max-w-screen bg-black/85 backdrop-blur-sm 
-            flex flex-col justify-center items-center fixed top-0 
+            flex flex-col justify-center items-center space-y-5 fixed top-0 
             left-0 right-0 z-50 transition-opacity duration-300 ease-in-out ${
             modalOpacity === 1 ? "opacity-100" : "opacity-0"
           }`}
