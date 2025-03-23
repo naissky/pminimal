@@ -15,20 +15,6 @@
     font-style: medium;
 }
 
-@font-face {
-    font-family: 'Apfelfont Bold';
-    src: url('/fonts/ApfelGrotezk-Bold.woff2') format('woff2');
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Apfelfont Black';
-    src: url('/fonts/ApfelGrotezk-Black.woff2') format('woff2');
-    font-weight: 900;
-    font-style: normal;
-}
-
 * {
     font-family: 'Apfelfont', sans-serif;
     font-weight: 300;

@@ -26,12 +26,12 @@ export const projectData: ProjectData[] = [
     {
         title: "Crave Bakery",
         description: "Crave Bakery es una panaderia enfocada al toque orgánico y familiar.",
-        image: "/crave-bakery.jpg"
+        image: "/crave-bakery.avif"
     },
     {
-        title: "Nido Creativo",
-        description: "El nido es una agencia de diseño ubicada en Buenos Aires, Argentina.",
-        image: "https://marcalima.pe/wp-content/uploads/2023/10/agencia_creativa.png"
+        title: "Arabica",
+        description: "Arabica es una cafeteria ubicada en la ciudad de Buenos Aires, Argentina.",
+        image: "/arabica.avif"
     },
     {
         title: "Proyecto 3",
