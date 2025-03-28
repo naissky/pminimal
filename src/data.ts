@@ -5,6 +5,7 @@ type HeaderData = {
 }
 
 type ProjectData = {
+    id: number;
     title: string;
     description: string;
     image: string;
@@ -13,7 +14,6 @@ type ProjectData = {
 type ExperienceData = {
     title: string;
     description: string;
-    image: string;
 }
 
 export const headerData: HeaderData = {
@@ -24,16 +24,19 @@ export const headerData: HeaderData = {
 
 export const projectData: ProjectData[] = [
     {
+        id: 1,
         title: "Crave Bakery",
         description: "Crave Bakery es una panaderia enfocada al toque orgánico y familiar.",
         image: "/crave-bakery.avif"
     },
     {
+        id: 2,
         title: "Arabica",
         description: "Arabica es una cafeteria ubicada en la ciudad de Buenos Aires, Argentina.",
         image: "/arabica.avif"
     },
     {
+        id: 3,
         title: "Proyecto 3",
         description: "Descripción del proyecto 3",
         image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
@@ -44,16 +47,13 @@ export const experienceData: ExperienceData[] = [
     {
         title: "Diseñador Grafico",
         description: "El corral.",
-        image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
     },
     {
         title: "SEO & Marketing",
         description: "Nido Creativo.",
-        image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
     },
     {
         title: "Freelance",
         description: "Desarrollo Web",
-        image: "https://sufio.com/content/media/images/what-is-a-font.width-1440.jpg"
     }
 ]

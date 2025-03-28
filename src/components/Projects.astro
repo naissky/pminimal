@@ -1,6 +1,6 @@
 ---
 import { headerData, projectData } from "../data";
-import { ExpandableCard } from "./core/ExpandableCard.tsx";
+import AnimatedModal from "./core/AnimatedModal";
 ---
 
 <section class="mt-10">
@@ -8,11 +8,11 @@ import { ExpandableCard } from "./core/ExpandableCard.tsx";
         <p class="text-zinc-600 text-lg">{headerData.description}</p>
     </div>
   <h2 class="font-medium text-lg text-black">Proyectos Seleccionados</h2>
-  <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 py-5">
+  <div class="grid grid-cols-2 sm:grid-cols-4 gap-10 py-5">
     {
       projectData.slice(0, 2).map((project) => (
         <div class="col-span-2 space-y-2">
-          <ExpandableCard
+          <AnimatedModal
             client:load
             image={`${project.image}`}
             title={project.title}
